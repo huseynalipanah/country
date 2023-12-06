@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+body {
+  background-color: #fafafa;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav {
+  max-width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 60px;
+  margin-bottom: 30px;
+
+  .where {
+    color: #111517;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    i {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.cards {
+  max-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 70px;
+
+  .country {
+    border-radius: 5px;
+    max-width: auto;
+    width: 264px;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 264px;
+      height: 160px;
+    }
+    .about {
+      margin: 20px 0 0 20px;
+      font-style: normal;
+      line-height: 26px;
+      margin-bottom: 10px;
+      color: #111517;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      .stats {
+        font-size: 14px;
+
+        p {
+          margin-bottom: 5px;
+          font-weight: 600;
+
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .where {
+    font-size: 14px !important; 
+  }
+}
